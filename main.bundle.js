@@ -57,7 +57,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AppComponent = (function () {
     function AppComponent() {
         console.log("Website Author: James Clare");
-        console.log("Iteration: 1.5.10");
+        console.log("Iteration: 0.2.11");
     }
     return AppComponent;
 }());
