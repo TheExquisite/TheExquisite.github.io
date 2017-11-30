@@ -1,15 +1,92 @@
-webpackJsonp([1],{
+webpackJsonp([2],{
 
 /***/ "../../../../../src async recursive":
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./opps/opps.module": [
+		"../../../../../src/app/opps/opps.module.ts",
+		0
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids)
+		return Promise.reject(new Error("Cannot find module '" + req + "'."));
+	return __webpack_require__.e(ids[1]).then(function() {
+		return __webpack_require__(ids[0]);
+	});
+};
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+module.exports = webpackAsyncContext;
+webpackAsyncContext.id = "../../../../../src async recursive";
+
+/***/ }),
+
+/***/ "../../../../../src/app/about/about.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "body{\r\n    text-align: center;\r\n}\r\n\r\n.heading{\r\n    padding-top: 10vh;\r\n    font-size: 10vh;\r\n    font-weight: bold;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n}\r\n\r\n.subtext{\r\n    font-size: 6vh;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
-}
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = "../../../../../src async recursive";
+module.exports = "<body>\n\n  <div class=\"heading\">\n    About page\n  </div>\n\n</body>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/about/about.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_animations__ = __webpack_require__("../../../../../src/app/router.animations.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AboutComponent = (function () {
+    function AboutComponent() {
+    }
+    AboutComponent.prototype.ngOnInit = function () {
+    };
+    return AboutComponent;
+}());
+AboutComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
+        selector: 'about',
+        template: __webpack_require__("../../../../../src/app/about/about.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/about/about.component.css")],
+        animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__router_animations__["a" /* routerTransition */])()],
+        host: { '[@routerTransition]': '' }
+    }),
+    __metadata("design:paramtypes", [])
+], AboutComponent);
+
+//# sourceMappingURL=about.component.js.map
 
 /***/ }),
 
@@ -18,10 +95,10 @@ webpackEmptyContext.id = "../../../../../src async recursive";
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Quicksand|ABeeZee);", ""]);
+exports.push([module.i, "@import url(https://use.typekit.net/njs3dfl.css);", ""]);
 
 // module
-exports.push([module.i, "html, body {\r\n  height: 100%;\r\n  width: 100%;\r\n  left: 0px;\r\n  right: 0px;\r\n  overflow: hidden;\r\n}\r\n\r\n.title{\r\n  padding-top: 18vh;\r\n  font-family: Quicksand, Verdana;\r\n  font-weight: bold;\r\n  font-size: 4vw;\r\n  color: #ffff;\r\n  text-shadow: 0px 3px 4px #505050;\r\n  padding-bottom: 8px;\r\n  padding-right: 10px;\r\n}\r\n\r\n.blurbWrapper{\r\n  padding-top: 15px;\r\n  padding-bottom: 10px;\r\n  color: #ffff;\r\n  width: 60vw;\r\n  font-size: 3vh;\r\n  text-align: center;\r\n  font-family:  Quicksand, Verdana;\r\n}\r\n\r\n.blurb{\r\n  margin: auto;\r\n  width: 60vw;\r\n  height: 30vh;\r\n  font-size: 3vh;\r\n  font-family: Quicksand, Verdana;\r\n  color: #FFFF;\r\n}\r\n\r\n.learnMoreWrapper{\r\n  padding-bottom: 10px;\r\n  width: 60vw;\r\n  height: auto;\r\n  text-align: center;\r\n  padding-top: 10px;\r\n}\r\n\r\n.learnMoreButton{\r\n  margin: auto;\r\n  font-family: Quicksand, Verdana;\r\n  color: black;\r\n  background-color: white;\r\n  font-size: 3vh;\r\n  vertical-align: middle;\r\n  padding: 10px;\r\n}\r\n.learnMoreButton:hover{\r\n  margin: auto;\r\n  font-family: Quicksand, Verdana;\r\n  font-weight: bold;\r\n  color: rgb(255, 255, 255);\r\n  background-color: rgb(56, 56, 56);\r\n  font-size: 3vh;\r\n  vertical-align: middle;\r\n  padding: 10px;\r\n}\r\n\r\n.lineSpacer{\r\n  height: 3px;\r\n  width: 60vw;\r\n  background-color: #ffff;\r\n  box-shadow: 0px 3px 4px #505050;\r\n}\r\n\r\n.socialLinks{\r\n  padding-top: 10px;\r\n}\r\n.video-background {\r\n  background-color: black;\r\n  position: fixed;\r\n  right: 0; \r\n  bottom: 0;\r\n  min-width: 100%; \r\n  min-height: 100%;\r\n  width: 100vw;\r\n  height: auto;\r\n  z-index: -100;\r\n}\r\n\r\n.iconButton{\r\n  width: 8vh;\r\n  height: 8vh;\r\n}\r\n\r\n.iconPadding{\r\n  padding: 10px;\r\n}\r\n\r\n.icon{\r\n  padding-top: 1.3vh;\r\n  width: 5.5vh;\r\n  height: 5.5vh;\r\n}\r\n\r\n.iconWrapper{\r\n  style: inline-block;\r\n  padding-top: 10px;\r\n  width: 60vw;\r\n  height: 20vh;\r\n  text-align: center;\r\n}\r\n\r\n\r\n@media screen and (max-width: 1080px) {\r\n  .title{\r\n    padding-top: 0px;\r\n    font-family: Quicksand, Verdana;\r\n    font-weight: bold;\r\n    font-size: 5vh;\r\n    color: #ffff;\r\n    text-shadow: 0px 3px 4px #505050;\r\n    padding-bottom: 1vh;\r\n    text-align: center;\r\n  }\r\n\r\n  .blurbWrapper{\r\n    padding-top: 15px;\r\n    padding-bottom: 10px;\r\n    color: #ffff;\r\n    width: 98vw;\r\n    text-align: center;\r\n    font-family:  Quicksand, Verdana;\r\n    font-size: 2vh;\r\n  }\r\n\r\n  .learnMoreButton{\r\n    margin: auto;\r\n    font-family: Quicksand, Verdana;\r\n    color: black;\r\n    background-color: white;\r\n    font-size: 3vh;\r\n    vertical-align: middle;\r\n    padding: 0.5vh;\r\n  }\r\n  .learnMoreButton:hover{\r\n    margin: auto;\r\n    font-family: Quicksand, Verdana;\r\n    font-weight: bold;\r\n    color: rgb(255, 255, 255);\r\n    background-color: rgb(56, 56, 56);\r\n    font-size: 3vh;\r\n    vertical-align: middle;\r\n    padding: 0.5vh;\r\n  }\r\n\r\n  .learnMoreWrapper{\r\n    padding: 0.5vh;\r\n    width: 100vw;\r\n    text-align: center;\r\n  }\r\n\r\n  .lineSpacer{\r\n      height: 3px;\r\n      width: 95vw;\r\n      background-color: #ffff;\r\n      box-shadow: 0px 3px 4px #505050;\r\n  }\r\n\r\n  .socialLinks{\r\n      padding-top: 10px;\r\n  }\r\n  .video-background {\r\n    position: fixed;\r\n    right: 0;   \r\n    bottom: 0;\r\n    min-width: 100%; \r\n    min-height: 100%;\r\n    height: 100vh;\r\n    width: auto;  \r\n    z-index: -100;\r\n  }\r\n\r\n  .iconWrapper{\r\n    style: inline-block;\r\n    padding-top: 10px;\r\n    width: 100vw;\r\n    text-align: center;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, "header{\r\n    margin: 0;\r\n}\r\n\r\nhtml, body, .contentWrapper {\r\n    height: 100%;\r\n    width: 100%;\r\n    left: 0;\r\n    right: 0;\r\n    position: fixed;\r\n    padding: 0;\r\n    z-index: 0;\r\n    margin: 0;\r\n    padding-bottom: 0 !important;\r\n    padding-top: 0 !important;\r\n}\r\n\r\n.contentWrapper{\r\n    margin: 0 !important;\r\n    padding: 0 !important;\r\n    background-color: orange;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.menuIcon {\r\n    font-size: 6vh;\r\n    transition: 0.5s;\r\n    padding-left: 10px;\r\n    cursor: pointer;\r\n    z-index: 2;\r\n    color: gray;\r\n    position: fixed;\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\r\n    font-weight: bold;\r\n} \r\n\r\n.sidenav {\r\n    height: 100%;\r\n    width: 0;\r\n    position: fixed;\r\n    z-index: 1;\r\n    top: 0;\r\n    left: 0;\r\n    background-color: #111;\r\n    overflow-x: hidden;\r\n    transition: 0.5s;\r\n    padding-top: 60px;\r\n}\r\n\r\n.sidenav a {\r\n    padding: 8px 8px 8px 20px;\r\n    text-decoration: none;\r\n    color: #818181;\r\n    display: block;\r\n    transition: 0.3s;\r\n}\r\n\r\n.sidenav a:hover {\r\n    color: #f1f1f1;\r\n}\r\n\r\n.sidenav .closebtn {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 25px;\r\n    margin-left: 50px;\r\n}\r\n\r\n@media screen and (max-height: 450px) {\r\n  .sidenav {padding-top: 15px;}\r\n  .sidenav a {font-size: 18px;}\r\n}\r\n\r\n.navHeading{\r\n    font-family: \"proxima-nova\", sans-serif;\r\n    font-weight: bold;\r\n    font-size: 3vh;\r\n\r\n}\r\n\r\n.route{\r\n    padding-left: 35px !important;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n    font-size: 3vh;\r\n}\r\n\r\n.footer {\r\n    position: fixed;\r\n    display: inline;\r\n    left: 0;\r\n    bottom: 0;\r\n    width: 100%;\r\n    background-color: gray;\r\n    color: black;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n    font-size: 12px;\r\n}\r\n\r\n.footerLine {\r\n    height: 1px;\r\n    width: 100%;\r\n    background-color: black;\r\n    z-index: 3;\r\n}\r\n", ""]);
 
 // exports
 
@@ -34,7 +111,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<head>\r\n  <link rel=\"icon\" href=\"../favicon.ico\">\r\n</head>\r\n\r\n<body>\r\n  <video autoplay loop class=\"video-background\" muted plays-inline>\r\n    <source src=\"../assets/man.mp4\" type=\"video/mp4\">\r\n  </video>\r\n\r\n\r\n  <div class=title>The Genius Apprentice Program</div>\r\n\r\n  <div class=\"lineSpacer\"></div>\r\n\r\n  <div class=\"blurbWrapper\">\r\n      Take a GAP year with the world's leading entrepreneur apprentice program. <br /><br />\r\n\r\n      With 1 in 2 current job titles estimated to disappear in the next decade, what better way to impact our world than matching experienced entrepreneurs with aspiring young adults \r\n      to create amazing things together. <br /><br />\r\n      \r\n      The first step is discovering your life's purpose, so we can match you with the entrepreneur that is right for you. <br /> \r\n  </div>\r\n  <div class=\"learnMoreWrapper\">\r\n    <a class=\"learnMoreButton\" md-raised-button href=\"http://purpose.geniusu.com/?a_aid=gap\">Discover your purpose now</a>\r\n  </div>\r\n\r\n  <div class=\"lineSpacer\"></div>\r\n\r\n  <div class=\"iconWrapper\"> \r\n    <a md-fab class=\"iconButton\" type=\"button\" target=\"_blank\" href=\"https://www.facebook.com/GeniusApprenticeProgram/\">\r\n      <img class=\"icon\" src=\"../assets/facebookicon.png\" >\r\n    </a>\r\n    <span class=\"iconPadding\"></span>\r\n    <a md-fab class=\"iconButton\" type=\"button\">\r\n      <img class=\"icon\" src=\"../assets/instaicon.png\">\r\n    </a>\r\n    <span class=\"iconPadding\"></span>\r\n    <a md-fab class=\"iconButton\" type=\"button\">\r\n      <img class=\"icon\" src=\"../assets/twittericon.png\">\r\n    </a>\r\n    <span class=\"iconPadding\"></span>\r\n    <a md-fab class=\"iconButton\" type=\"button\">\r\n      <img class=\"icon\" src=\"../assets/linkedinicon.png\">\r\n    </a>\r\n  </div>\r\n</body>"
+module.exports = "<div class=\"contentWrapper\">\n  <router-outlet> \n  </router-outlet>\n</div>\n\n<span id=\"menuIcon\" class=\"menuIcon\" (click)=\"toggleNav()\">&#9776;</span>\n\n<div id=\"sideNav\" class=\"sidenav\">\n  <a class=\"navHeading\" routerLink=\"/home\" routerLinkActive=\"active\" style=\"padding-top:30px;\">Home</a>\n  <a class=\"route\" routerLink=\"/home/about\" routerLinkActive=\"active\">About&nbsp;Us</a>\n  <a class=\"route\" routerLink=\"/home/theTeam\" routerLinkActive=\"active\">The&nbsp;Team</a>\n  <a class=\"route\" routerLink=\"/home/contactUs\" routerLinkActive=\"active\">Contact&nbsp;Us</a>\n  <a class=\"navHeading\" routerLink=\"/opportunities\" routerLinkActive=\"active\">Opportunities</a>\n  <a class=\"route\" routerLink=\"/opportunities/apprentices\" routerLinkActive=\"active\">Apprentices</a>\n  <a class=\"route\" routerLink=\"/opportunities/mentors\" routerLinkActive=\"active\">Mentors</a>\n  <a class=\"route\" routerLink=\"/opportunities/businesses\" routerLinkActive=\"active\">Businesses</a>\n  <a class=\"navHeading\" routerLink=\"/stories\" routerLinkActive=\"active\">Stories</a>\n</div>\n\n\n\n<div class=\"footer\">\n  <span style=\"float: left; padding-left: 15px; cursor: default; user-select: none\">Impact Dynamics Global</span>\n  <a style=\"float: right; padding-right: 15px; cursor: pointer\">Privacy Statement</a>\n</div>"
 
 /***/ }),
 
@@ -56,13 +133,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppComponent = (function () {
     function AppComponent() {
+        this.title = 'app works!';
+        this.navOpen = false;
         console.log("Website Author: James Clare");
-        console.log("Iteration: 0.2.11");
+        console.log("Iteration: 1.0.1");
     }
+    AppComponent.prototype.openNav = function () {
+        document.getElementById("sideNav").style.width = "250px";
+        document.getElementById("menuIcon").style.transform = "rotate(90deg)";
+        this.navOpen = true;
+    };
+    AppComponent.prototype.closeNav = function () {
+        document.getElementById("sideNav").style.width = "0";
+        document.getElementById("menuIcon").style.transform = "rotate(0deg)";
+        this.navOpen = false;
+    };
+    AppComponent.prototype.toggleNav = function () {
+        if (this.navOpen) {
+            this.closeNav();
+        }
+        else {
+            this.openNav();
+        }
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
         selector: 'app-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -74,6 +171,27 @@ AppComponent = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/app.custom-preloading.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_of__ = __webpack_require__("../../../../rxjs/observable/of.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_observable_of__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomPreloading; });
+
+var CustomPreloading = (function () {
+    function CustomPreloading() {
+    }
+    CustomPreloading.prototype.preload = function (route, load) {
+        return route.data && route.data.preload ? load() : __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_rxjs_observable_of__["of"])(null);
+    };
+    return CustomPreloading;
+}());
+
+//# sourceMappingURL=app.custom-preloading.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/app.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -82,8 +200,18 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_material__ = __webpack_require__("../../../material/@angular/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__team_team_component__ = __webpack_require__("../../../../../src/app/team/team.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__not_found_not_found_component__ = __webpack_require__("../../../../../src/app/not-found/not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__stories_stories_component__ = __webpack_require__("../../../../../src/app/stories/stories.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_custom_preloading__ = __webpack_require__("../../../../../src/app/app.custom-preloading.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__blog_blog_component__ = __webpack_require__("../../../../../src/app/blog/blog.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -91,6 +219,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -105,21 +243,564 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]
+            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__team_team_component__["a" /* TeamComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__about_about_component__["a" /* AboutComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__not_found_not_found_component__["a" /* NotFoundComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__stories_stories_component__["a" /* StoriesComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__contact_contact_component__["a" /* ContactComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__blog_blog_component__["a" /* BlogComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_material__["a" /* MdButtonModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_material__["b" /* MdCardModule */]
+            __WEBPACK_IMPORTED_MODULE_13__app_routing__["a" /* AppRouting */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(__WEBPACK_IMPORTED_MODULE_13__app_routing__["b" /* routes */], { preloadingStrategy: __WEBPACK_IMPORTED_MODULE_14__app_custom_preloading__["a" /* CustomPreloading */] })
         ],
-        providers: [],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_14__app_custom_preloading__["a" /* CustomPreloading */]],
+        exports: [__WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.routing.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__not_found_not_found_component__ = __webpack_require__("../../../../../src/app/not-found/not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__team_team_component__ = __webpack_require__("../../../../../src/app/team/team.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__stories_stories_component__ = __webpack_require__("../../../../../src/app/stories/stories.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_app_blog_blog_component__ = __webpack_require__("../../../../../src/app/blog/blog.component.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return routes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRouting; });
+
+
+
+
+
+
+
+
+var routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_1__home_home_component__["a" /* HomeComponent */] },
+    { path: 'home/about', component: __WEBPACK_IMPORTED_MODULE_2__about_about_component__["a" /* AboutComponent */] },
+    { path: 'home/theTeam', component: __WEBPACK_IMPORTED_MODULE_4__team_team_component__["a" /* TeamComponent */] },
+    { path: 'home/contactUs', component: __WEBPACK_IMPORTED_MODULE_5__contact_contact_component__["a" /* ContactComponent */], data: { preload: true } },
+    { path: 'opportunities', loadChildren: './opps/opps.module#OppsModule' },
+    { path: 'stories', component: __WEBPACK_IMPORTED_MODULE_6__stories_stories_component__["a" /* StoriesComponent */] },
+    { path: 'blog', component: __WEBPACK_IMPORTED_MODULE_7_app_blog_blog_component__["a" /* BlogComponent */] },
+    { path: '**', component: __WEBPACK_IMPORTED_MODULE_3__not_found_not_found_component__["a" /* NotFoundComponent */] }
+];
+var AppRouting = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(routes, {
+    useHash: true
+});
+//# sourceMappingURL=app.routing.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/blog/blog.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "body{\r\n    text-align: center;\r\n}\r\n\r\n.heading{\r\n    padding-top: 10vh;\r\n    font-size: 10vh;\r\n    font-weight: bold;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n}\r\n\r\n.subtext{\r\n    font-size: 6vh;\r\n}\r\n\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/blog/blog.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<body>\n    <iframe src=\"https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGeniusApprenticeProgramme%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId\" width=\"500\" height=\"1000\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\"></iframe>\n</body>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/blog/blog.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_animations__ = __webpack_require__("../../../../../src/app/router.animations.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BlogComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var BlogComponent = (function () {
+    function BlogComponent() {
+    }
+    BlogComponent.prototype.ngOnInit = function () {
+    };
+    return BlogComponent;
+}());
+BlogComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
+        selector: 'app-blog',
+        template: __webpack_require__("../../../../../src/app/blog/blog.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/blog/blog.component.css")],
+        animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__router_animations__["a" /* routerTransition */])()],
+        host: { '[@routerTransition]': '' }
+    }),
+    __metadata("design:paramtypes", [])
+], BlogComponent);
+
+//# sourceMappingURL=blog.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/contact/contact.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "body{\r\n    text-align: center;\r\n}\r\n\r\n.heading{\r\n    padding-top: 10vh;\r\n    font-size: 10vh;\r\n    font-weight: bold;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n}\r\n\r\n.subtext{\r\n    font-size: 6vh;\r\n}\r\n\r\n.Gform{\r\n    transition: 1s;\r\n}\r\n\r\n.loading{\r\n    z-index: 2;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/contact/contact.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<!--\n<body> \n  <div class=\"heading\">\n    contact works!\n  </div>\n</body>\n!-->\n\n\n<iframe id=\"Gform\" class=\"Gform\" src=\"https://docs.google.com/forms/d/e/1FAIpQLSfhuvJmE7jwij-f0A7-ILU04Ybxy9-dMT3ygnxwjw43gtHl_w/viewform?embedded=true\" width=\"100%\" height=\"1080px\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/contact/contact.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_animations__ = __webpack_require__("../../../../../src/app/router.animations.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ContactComponent = (function () {
+    function ContactComponent() {
+        console.log("contact us loaded");
+    }
+    ContactComponent.prototype.ngOnInit = function () {
+        var gForm = document.getElementById('Gform');
+        gForm.style.paddingTop = "100%";
+        gForm.style.cursor = "wait";
+        gForm.onload = function () {
+            gForm.style.cursor = "auto";
+            gForm.style.paddingTop = "0";
+        };
+    };
+    return ContactComponent;
+}());
+ContactComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
+        selector: 'contact',
+        template: __webpack_require__("../../../../../src/app/contact/contact.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/contact/contact.component.css")],
+        animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__router_animations__["a" /* routerTransition */])()],
+        host: { '[@routerTransition]': '' }
+    }),
+    __metadata("design:paramtypes", [])
+], ContactComponent);
+
+//# sourceMappingURL=contact.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/home/home.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "body{\r\n    text-align: center;\r\n}\r\n\r\n.heading{\r\n    padding-top: 10vh;\r\n    font-size: 10vh;\r\n    font-weight: bold;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n}\r\n\r\n.subtext{\r\n    font-size: 6vh;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/home/home.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<body>\n    \n  <div class=\"heading\">\n    Home page\n  </div>\n    \n</body>\n    "
+
+/***/ }),
+
+/***/ "../../../../../src/app/home/home.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_animations__ = __webpack_require__("../../../../../src/app/router.animations.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var HomeComponent = (function () {
+    function HomeComponent() {
+    }
+    return HomeComponent;
+}());
+HomeComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
+        selector: 'home',
+        template: __webpack_require__("../../../../../src/app/home/home.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/home/home.component.css")],
+        animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__router_animations__["a" /* routerTransition */])()],
+        host: { '[@routerTransition]': '' }
+    })
+], HomeComponent);
+
+//# sourceMappingURL=home.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/not-found/not-found.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@font-face {\r\n    font-family: \"Proxima Nova\";\r\n    src: url(" + __webpack_require__("../../../../../src/assets/ProximaNova-Regular.woff") + ") format(\"woff\"),\r\n   }\r\n\r\nbody{\r\n    text-align: center;\r\n}\r\n\r\n.fourohfour{\r\n    padding-top: 10vh;\r\n    font-size: 10vh;\r\n    font-weight: bold;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n}\r\n\r\n.notFound{\r\n    font-size: 6vh;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/not-found/not-found.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<body>\n  <div class=\"fourohfour\">\n    404\n  </div>\n  <div class=\"notFound\">\n    Sorry, that page doesn't exist  \n  </div>   \n</body>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/not-found/not-found.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_animations__ = __webpack_require__("../../../../../src/app/router.animations.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotFoundComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var NotFoundComponent = (function () {
+    function NotFoundComponent() {
+    }
+    NotFoundComponent.prototype.ngOnInit = function () {
+    };
+    return NotFoundComponent;
+}());
+NotFoundComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
+        selector: 'app-not-found',
+        template: __webpack_require__("../../../../../src/app/not-found/not-found.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/not-found/not-found.component.css")],
+        animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__router_animations__["a" /* routerTransition */])()],
+        host: { '[@routerTransition]': '' }
+    }),
+    __metadata("design:paramtypes", [])
+], NotFoundComponent);
+
+//# sourceMappingURL=not-found.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/router.animations.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (immutable) */ __webpack_exports__["a"] = routerTransition;
+
+function routerTransition() {
+    return slideToLeft();
+}
+function slideToLeft() {
+    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* trigger */])('routerTransition', [
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* state */])('void', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* style */])({ position: 'fixed', width: '100%' })),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* state */])('*', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* style */])({ position: 'fixed', width: '100%' })),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* transition */])(':enter', [
+            __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* style */])({ transform: 'translateX(100%)', position: 'fixed' }),
+            __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* animate */])('0.8s ease-in-out', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* style */])({ transform: 'translateX(0%)' }))
+        ]),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* transition */])(':leave', [
+            __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* style */])({ transform: 'translateX(0%)', position: 'fixed' }),
+            __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* animate */])('0.8s ease-in-out', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* style */])({ transform: 'translateX(-100%)' }))
+        ])
+    ]);
+}
+//# sourceMappingURL=router.animations.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/stories/stories.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "body{\r\n    position: relative;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    text-align: center;\r\n    -webkit-box-pack: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    padding-top: 8vh;\r\n}\r\n\r\n.itemWrapper{\r\n    vertical-align: center;\r\n    background-color: white;\r\n    padding: 3vh;\r\n    width: 70vw;\r\n    height: 70vh;\r\n    border-radius: 10px;\r\n}\r\n\r\n.contentWrapper {\r\n    display: -webkit-inline-box;\r\n    display: -ms-inline-flexbox;\r\n    display: inline-flex;\r\n    vertical-align: center;\r\n}\r\n\r\n.heading{\r\n    font-size: 10vh;\r\n    font-weight: bold;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n    padding-bottom: 1vh;\r\n}\r\n\r\n.subtext{\r\n    font-size: 6vh;\r\n}\r\n\r\n.youtube{\r\n    border-radius: 4px;\r\n    display: inline;\r\n    transition: 2s;\r\n}\r\n\r\n.facebook{\r\n    transition: 2s;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/stories/stories.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<body>\n\n  <div class=\"itemWrapper\">\n      <div class=\"heading\">\n          Our Stories\n      </div>\n\n    <div class=\"contentWrapper\">\n      <iframe id=\"facebook\" class=\"facebook\" src=\"https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGeniusApprenticeProgramme%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId\" width=\"500\" height=\"1000\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\"></iframe>\n      <iframe id=\"youtube\" class=\"youtube\" width=\"720\" height=\"405\" src=\"https://www.youtube.com/embed/?listType=playlist&list=UC0GfZTCIHOBs2BHP3h3a42Q\" frameborder=\"0\"></iframe>\n    </div>\n  </div>\n\n</body>\n\n\n\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/stories/stories.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_animations__ = __webpack_require__("../../../../../src/app/router.animations.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StoriesComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var StoriesComponent = (function () {
+    function StoriesComponent() {
+    }
+    StoriesComponent.prototype.ngOnInit = function () {
+        var facebook = document.getElementById('facebook');
+        var youtube = document.getElementById('youtube');
+        facebook.style.opacity = "0";
+        facebook.style.cursor = "wait";
+        facebook.onload = function () {
+            facebook.style.cursor = "auto";
+            facebook.style.opacity = "1";
+        };
+        youtube.style.opacity = "0";
+        youtube.style.cursor = "wait";
+        youtube.onload = function () {
+            youtube.style.cursor = "auto";
+            youtube.style.opacity = "1";
+        };
+    };
+    return StoriesComponent;
+}());
+StoriesComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
+        selector: 'app-stories',
+        template: __webpack_require__("../../../../../src/app/stories/stories.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/stories/stories.component.css")],
+        animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__router_animations__["a" /* routerTransition */])()],
+        host: { '[@routerTransition]': '' }
+    }),
+    __metadata("design:paramtypes", [])
+], StoriesComponent);
+
+//# sourceMappingURL=stories.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/team/team.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ":host{\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\nbody{\r\n    text-align: center;\r\n    display: block;\r\n    position: relative;\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.heading{\r\n    font-size: 10vh;\r\n    font-weight: bold;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n}\r\n\r\n.subtext{\r\n    font-size: 6vh;\r\n}\r\n\r\n.portraitWrapper{\r\n    text-align: center;\r\n    display: -webkit-inline-box;\r\n    display: -ms-inline-flexbox;\r\n    display: inline-flex;\r\n}\r\n\r\n.portrait{\r\n    text-align: center;\r\n    font-size: 3vh;\r\n    width: 20vw;   \r\n    cursor: pointer;\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none; \r\n    font-family: \"proxima-nova\", sans-serif;\r\n    font-weight: bold;\r\n}\r\n\r\n.bioBox{\r\n    text-align: center;\r\n    bottom: 0px;\r\n    position: fixed;\r\n    right: 15%;\r\n    width: 70%;\r\n    transition: 0.5s;\r\n    background-color: white;\r\n    color: black;\r\n    font-size: 3vh;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n    border-radius: 6px;\r\n}\r\n\r\n.bioContent{\r\n    padding-top: 2vh;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/team/team.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<body>\n\n  <div class=\"portraitWrapper\">\n    <div class=\"portrait\" (click)=\"switchBioTrigger(1)\">\n      <img>\n      <div>\n        Susie<br>\n        Co Founder\n      </div>\n    </div>\n    <div class=\"portrait\" (click)=\"switchBioTrigger(2)\">\n      <img>\n      <div>\n        Deborah<br>\n        Co Founder\n      </div>\n    </div>\n    <div class=\"portrait\" (click)=\"switchBioTrigger(3)\">\n      <img>\n      <div>\n        James<br>\n        Developer \n      </div>\n    </div>\n  </div>\n\n  <div id=\"bio\" class=\"bioBox\">\n    <div class=\"bioContent\">{{currentText}}</div>\n  </div>\n\n</body>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/team/team.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_animations__ = __webpack_require__("../../../../../src/app/router.animations.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_textStore__ = __webpack_require__("../../../../../src/assets/textStore.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeamComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TeamComponent = (function () {
+    function TeamComponent() {
+        this.currentText = "";
+    }
+    TeamComponent.prototype.ngOnInit = function () {
+        this.closeBio();
+    };
+    TeamComponent.prototype.ngOnDestroy = function () {
+        this.closeBio();
+    };
+    TeamComponent.prototype.closeBio = function () {
+        document.getElementById("bio").style.height = "0px";
+        this.currentText = "";
+    };
+    TeamComponent.prototype.switchBioTrigger = function (currentBio) {
+        var _this = this;
+        document.getElementById("bio").style.height = "0px";
+        if (document.getElementById("bio").clientHeight != 0) {
+            setTimeout(function () { return _this.switchBio(currentBio); }, 500);
+        }
+        else {
+            this.switchBio(currentBio);
+        }
+    };
+    TeamComponent.prototype.switchBio = function (currentBio) {
+        if (currentBio == 0) {
+            document.getElementById("bio").style.height = "300px";
+            this.currentText = "";
+        }
+        if (currentBio == 1) {
+            document.getElementById("bio").style.height = "300px";
+            this.currentText = __WEBPACK_IMPORTED_MODULE_2__assets_textStore__["a" /* susieBio */];
+        }
+        if (currentBio == 2) {
+            document.getElementById("bio").style.height = "300px";
+            this.currentText = __WEBPACK_IMPORTED_MODULE_2__assets_textStore__["b" /* debBio */];
+        }
+        if (currentBio == 3) {
+            document.getElementById("bio").style.height = "300px";
+            this.currentText = __WEBPACK_IMPORTED_MODULE_2__assets_textStore__["c" /* jamesBio */];
+        }
+    };
+    return TeamComponent;
+}());
+TeamComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Component */])({
+        selector: 'app-team',
+        template: __webpack_require__("../../../../../src/app/team/team.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/team/team.component.css")],
+        animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__router_animations__["a" /* routerTransition */])()],
+        host: { '[@routerTransition]': '' }
+    }),
+    __metadata("design:paramtypes", [])
+], TeamComponent);
+
+//# sourceMappingURL=team.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/assets/ProximaNova-Regular.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "ProximaNova-Regular.0f7cb3d197e5a46d03ad.woff";
+
+/***/ }),
+
+/***/ "../../../../../src/assets/textStore.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return susieBio; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return debBio; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return jamesBio; });
+var susieBio = "This is Susie's bio, ect ect ect";
+var debBio = "This is Deborah's bio, ect ect ect";
+var jamesBio = "This is James' bio, wow, he really is the best programmer isn't he.";
+//# sourceMappingURL=textStore.js.map
 
 /***/ }),
 
@@ -153,7 +834,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* enableProdMode */])();
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* enableProdMode */])();
 }
