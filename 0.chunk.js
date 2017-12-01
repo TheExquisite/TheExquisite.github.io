@@ -73,7 +73,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "body{\r\n    text-align: center;\r\n}\r\n\r\n.heading{\r\n    padding-top: 10vh;\r\n    font-size: 10vh;\r\n    font-weight: bold;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n}\r\n\r\n.subtext{\r\n    font-size: 6vh;\r\n}\r\n\r\n.Gform{\r\n    transition: 1s;\r\n}\r\n\r\n.loading{\r\n    z-index: 2;\r\n}\r\n", ""]);
+exports.push([module.i, "body{\r\n    text-align: center;\r\n    overflow: scroll;\r\n}\r\n\r\n.heading{\r\n    padding-top: 10vh;\r\n    font-size: 10vh;\r\n    font-weight: bold;\r\n    font-family: \"proxima-nova\", sans-serif;\r\n}\r\n\r\n.subtext{\r\n    font-size: 6vh;\r\n}\r\n\r\n.Gform{\r\n    transition: 1s;\r\n    height: 100vh;\r\n}\r\n\r\n.loading{\r\n    z-index: 2;\r\n}\r\n", ""]);
 
 // exports
 
@@ -86,7 +86,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<!--\n<body> \n  <div class=\"heading\">\n    contact works!\n  </div>\n</body>\n!-->\n\n\n<iframe id=\"Gform\" class=\"Gform\" src=\"https://docs.google.com/forms/d/e/1FAIpQLSfhuvJmE7jwij-f0A7-ILU04Ybxy9-dMT3ygnxwjw43gtHl_w/viewform?embedded=true\" width=\"100%\" height=\"1080px\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>"
+module.exports = "\n<!--\n<body> \n  <div class=\"heading\">\n    contact works!\n  </div>\n</body>\n!-->\n\n\n<iframe id=\"Gform\" class=\"Gform\" src=\"https://docs.google.com/forms/d/e/1FAIpQLSfhuvJmE7jwij-f0A7-ILU04Ybxy9-dMT3ygnxwjw43gtHl_w/viewform?embedded=true\" width=\"100%\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>"
 
 /***/ }),
 
