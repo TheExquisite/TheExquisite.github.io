@@ -1,5 +1,0 @@
-export const susieBio = "Our youth hold many of the keys for a sustainable future, let’s support them, sharing our wisdom so they can in turn share theirs. An experienced entrepreneur, passionate about Reducing Inequalities across the globe.  Susie believes that by equipping the future generation of social entrepreneurs in all economies with the skills, experience, empowerment and inspiration to thrive - would really allow us all to feel the question of how we contribute to sustainable change. Susie visions a future in which each of us understands our power to create the world we desire."
-
-export const debBio = "As a mother of five young adults, Deb is passionate about making sure there is opportunities and a sustainable planet for the future generations. Known as ‘The Organiser’,  you want her on your team. Deb mentors businesses to interpret financial data in a way that makes simple, practical  sense.  Deborah supports many purposeful causes herself in her spare time and through B1G1, and her favourite entrepreneurs to work with are ones who are equally purposeful.";
-
-export const jamesBio = "This is James' bio, ect ect ect";
